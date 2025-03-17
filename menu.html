@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Comida</title>
+    <style>
+        body {
+            background-image: url(https://scontent.frgl2-1.fna.fbcdn.net/v/t39.30808-6/313429075_150551894351169_3776741316720204219_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFwQBDL_EEc9J6xuIUKb2DepcqMRi8vuW6lyoxGLy-5blPKZyXnns2dhJSwcPMqd5ALZP0sviOKTrwuyraoFanC&_nc_ohc=66cbFgqu30EQ7kNvgE88Nzq&_nc_oc=AdjwnB6apis7zYSAcaQvNKzVbzqXso-CDsbnEP-eJ6niKTjbdJrq_bajpZK-iWvy0SU&_nc_zt=23&_nc_ht=scontent.frgl2-1.fna&_nc_gid=GwYZR5PD7xc-9FwtbvBORw&oh=00_AYG7DP_V8NKEKQzje-Ui-SAVJ59vGluWG3hpMUQY1o_niw&oe=67DBAD56);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; 
+            font-family: white, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-item {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #cc5500;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Menú</h1>
+
+    <div class="menu-item">
+        <img src=".." alt="Hamburguesa">
+        <h3><strong><li onclick="hacerPedido('Hamburguesa')">🍔 Hamburguesa </li></h3>
+            <p>Deliciosa hamburguesa con carne, queso, lechuga y tomate.</p>
+            <ol>
+                <span class="precio">$11000.00</span>
+                <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Hamburguesa,%20en%2020%20podes%20pasar%20a%20retirar%20tu%20pedido%20en%20Av.Peron%20y%20Av.San Martín" target="_blank">
+                    Pedido
+                </a></ol>
+                <ol>
+                <span class="precio">$13000.00</span>
+                <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Hamburguesa,%20en%2025%20minutos%20llevaremos%20tu%20pedido%20a%20tu%20domicilio.%20tu%20domicilio:" target="_blank">
+                    Pedido a domicilio
+                </a></ol></li></strong>
+    </div>
+
+    <div class="menu-item">
+        <img src=".." alt="Cono de Papas Fritas">
+        <h3><strong><li onclick="hacerPedido('Papas Fritas')">🍟 Cono de Papas Fritas</li></h3>
+            <p>Bandeja de Papas fritas crocantes con salsa opcional.</p>
+            <ol>
+            <span class="precio">$5000.00</span>
+            <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Cono%20de&20Papas%Fritas,%20en%2020%20podes%20pasar%20a%20retirar%20tu%20pedido%20en%20Av.Peron%20y%20Av.San Martín" target="_blank">
+                Pedido
+            </a></ol>
+            <ol>
+                <span class="precio">$5500.00</span>
+                <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Cono%20de%20Papas%Fritas%20con%20chedar,%20en%2020%20podes%20pasar%20a%20retirar%20tu%20pedido%20en%20Av.Peron%20y%20Av.San Martín" target="_blank">
+                    Pedido con chedar
+                </a></ol>
+            <ol>
+            <span class="precio">$6000.00</span>
+            <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Cono%20de%20Papas%20Fritas,%20en%2025%20%llevaremos%20tu%20pedido%20a%20tu%20domicilio.%20tu%20domicilio:" target="_blank">
+                Pedido a domicilio
+            </a></ol>
+            <ol>
+                <span class="precio">$6500.00</span>
+                <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Cono%20de%20Papas%20Fritas%20con%20chedar,%20en%2025%20%llevaremos%20tu%20pedido%20a%20tu%20domicilio.%20tu%20domicilio:" target="_blank">
+                    Pedido a domicilio con chedar 
+                </a></ol>
+        </strong>
+    </div>
+
+    <div class="menu-item">
+        <img src=".." alt="Bandeja de Papas Fritas">
+        <h3><strong><li onclick="hacerPedido('Papas Fritas')">🍟 Bandeja de Papas Fritas</li></h3>
+            <p>Bandeja de Papas fritas crocantes con salsa opcional.</p>
+            <ol>
+            <span class="precio">$5000.00</span>
+            <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Bandeja%20de%20Papas%Fritas,%20en%2020%20podes%20pasar%20a%20retirar%20tu%20pedido%20en%20Av.Peron%20y%20Av.San Martín" target="_blank">
+                Pedido
+            </a></ol>
+            <ol>
+                <span class="precio">$5500.00</span>
+                <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Bandeja%20de%20Papas%Fritas%20con%20chedar,%20en%2020%20podes%20pasar%20a%20retirar%20tu%20pedido%20en%20Av.Peron%20y%20Av.San Martín" target="_blank">
+                    Pedido con chedar
+                </a></ol>
+            <ol>
+            <span class="precio">$7000.00</span>
+            <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20Bandeja%20pedido%20de%20Papas%20Fritas,%20en%2025%20%llevaremos%20tu%20pedido%20a%20tu%20domicilio.%20tu%20domicilio:" target="_blank">
+                Pedido a domicilio
+            </a></ol>
+            <ol>
+                <span class="precio">$7500.00</span>
+                <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Bandeja%20Papas%20Fritas%20con%20chedar,%20en%2025%20%llevaremos%20tu%20pedido%20a%20tu%20domicilio.%20tu%20domicilio:" target="_blank">
+                    Pedido a domicilio con chedar 
+                </a></ol>
+        </strong>
+    </div>
+
+    <div class="menu-item">
+        <img src=".." alt="Sandwhich de lomo">
+        <h3><strong><li onclick="hacerPedido('Sandwhich de lomo')">🥪 Sandwhich de lomo </li></h3>
+            <p>Sandwhich de lomo con ...</p>
+            <ol>
+            <span class="precio">$22000.00</span>
+            <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Sandwich%20de%lomo,%20en%2020%20podes%20pasar%20a%20retirar%20tu%20pedido%20en%20Av.Peron%20y%20Av.San Martín" target="_blank">
+                Pedido
+            </a></ol>
+            <ol>
+            <span class="precio">$2400.00</span>
+            <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Sandwich%20de%20lomo,%20en%2025%20%llevaremos%20tu%20pedido%20a%20tu%20domicilio.%20tu%20domicilio:" target="_blank">
+                Pedido a domicilio
+            </a></ol></strong>
+    </div>
+
+    <div class="menu-item">
+        <img src=".." alt="Sandwhich de Milanesa">
+        <h3><strong><li onclick="hacerPedido('Sandwhich de Milanesa')">🥪 Sandwhich de Milanesa </li></h3>
+            <p>Sandwhich de Milanesa con ...</p>
+            <ol>
+            <span class="precio">$16000.00</span>
+            <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Sandwhich%20de%Milanesa,%20en%2020%20podes%20pasar%20a%20retirar%20tu%20pedido%20en%20Av.Peron%20y%20Av.San Martín" target="_blank">
+                Pedido
+            </a></ol>
+            <ol>
+            <span class="precio">$1800.00</span>
+            <a href="https://wa.me/5492974576502?text=Buenas,%20gracias%20por%20contactarnos%20por%20tu%20pedido%20de%20Sandwhich%20de%20milanesa,%20en%2025%20%llevaremos%20tu%20pedido%20a%20tu%20domicilio.%20tu%20domicilio:" target="_blank">
+                Pedido a domicilio
+            </a></ol></strong>
+    </div>
+
+    <br>
+    <button class="btn" onclick="window.location.href='index.html'">Volver</button>
+    
+    <audio id="musica" autoplay loop>
+        <source src="NESTOR EN BLOQUE  Zapada EN VIVO en UN POCO DE RUIDO (mp3cut.net).mp3" >
+    </audio>
+
+    <footer>
+        <p>&copy; 2025 Carro lo del Pela. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
